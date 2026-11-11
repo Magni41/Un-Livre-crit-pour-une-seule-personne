@@ -487,7 +487,7 @@ async function tenterConnexion() {
   const date = normaliserDate($("naissance").value);
 
   if (!nom || !prenom || !date) {
-    erreur.textContent = "Remplis les trois champs. Le mois et l’année s’écrivent comme ceci : 08/1999.";
+    erreur.textContent = "Remplis les trois champs. Le mois et l’année s’écrivent comme ceci : MM/AAAA.";
     return;
   }
   btn.disabled = true;
